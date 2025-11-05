@@ -8,7 +8,7 @@ This repository contains the practical implementations and theoretical analyses 
 
 ## 🚀 Project Overview
 
-This project explores fundamental concepts of memory management in operating systems. It combines theoretical explanations with practical code implementations in C, Python, and Java to demonstrate core mechanisms.
+This project explores fundamental concepts of memory management in operating systems. It combines theoretical explanations with practical code implementations in C, C#, Python, and Java to demonstrate core mechanisms.
 
 ### Implemented Concepts
 
@@ -20,7 +20,7 @@ The repository covers the following topics:
 
 2.  **Q2: Memory Fragmentation Simulation:**
     * A theoretical explanation of internal and external fragmentation.
-    * A **Python** program that simulates a fixed-partition memory manager using the **First-Fit** algorithm, calculating and reporting internal fragmentation.
+    * A **C#** program that simulates a fixed-partition memory manager using the **First-Fit** algorithm, calculating and reporting internal fragmentation.
 
 3.  **Q3: FIFO Page Replacement Algorithm:**
     * A theoretical overview of the First-In, First-Out (FIFO) algorithm.
@@ -53,8 +53,8 @@ The project is organized into folders, one for each question. The theoretical an
 ├── 📁 Q1\_Static\_Dynamic\_C/
 │   └── 📄 main.c
 │
-├── 📁 Q2\_Fragmentation\_Python/
-│   └── 📄 main.py
+├── 📁 Q2\_Fragmentation\_CS/
+│   └── 📄 Program.cs
 │
 ├── 📁 Q3\_FIFO\_Java/
 │   └── 📄 FIFO.java
@@ -74,55 +74,101 @@ The project is organized into folders, one for each question. The theoretical an
 
 ## ⚙️ How to Compile and Run
 
-Instructions for executing the practical assignments are provided below.
+This guide provides the full step-by-step instructions to clone, compile, and run all practical assignments in this repository using a `bash` terminal.
 
-### 1. C Programs (Q1, Q5*)
+### Prerequisites
 
-To compile and run the C programs, navigate to the appropriate directory:
+Before you begin, ensure you have the following tools installed on your system:
+* **Git** (for cloning the repository)
+* **GCC** (for compiling the C program, Q1)
+* **.NET SDK** (for running the C# project, Q2)
+* **Java JDK** (for compiling and running the Java programs, Q3 & Bonus)
+* **Python 3** (for running the Python scripts, Q4 & Q5)
+
+### Step 1: Clone the Repository
+
+First, clone this repository to your local machine.
 
 ```bash
-# Navigate to the directory
+# Clone the repository (replace with your repo's URL)
+git clone https://github.com/GuinaF2/Gerenciamento-de-Memoria---SO
+
+# Navigate into the newly created directory
+cd Grenciamento-de-Memoria---SO
+````
+
+### Step 2: Run the Assignments
+
+Follow the instructions for each question below.
+
+#### Q1: Static vs. Dynamic (C)
+
+```bash
+# Navigate to the correct folder
 cd Q1_Static_Dynamic_C/
 
-# Compile the program
+# Compile the C program
 gcc main.c -o main
 
 # Run the executable
 ./main
-````
-
-*(Applies to Q5 if C was used)*
-
-### 2\. Python Programs (Q2, Q4, Q5\*)
-
-To run the Python scripts, you need Python 3.x installed.
-
-```bash
-# Navigate to the directory
-cd Q2_Fragmentation_Python/
-
-# Run the script
-python3 main.py
 ```
 
-*(Applies to Q4 and Q5 if Python was used)*
-
-### 3\. Java Programs (Q3, Bonus, Q5\*)
-
-To compile and run the Java programs, you need the JDK installed.
+#### Q2: Memory Fragmentation (C\#)
 
 ```bash
-# Navigate to the directory
-cd Q3_FIFO_Java/
+# Navigate back to the root (or use 'cd ../') and enter the Q2 folder
+cd ../Q2_Fragmentation_CS/
 
-# Compile the .java file
+# Run the C# project (dotnet will handle compilation)
+dotnet run
+```
+
+#### Q3: FIFO Algorithm (Java)
+
+```bash
+# Navigate back to the root and enter the Q3 folder
+cd ../Q3_FIFO_Java/
+
+# Compile the Java file
 javac FIFO.java
 
 # Run the compiled .class file
 java FIFO
 ```
 
-*(Applies to the Bonus question and Q5 if Java was used)*
+#### Q4: Garbage Collection (Python)
+
+```bash
+# Navigate back to the root and enter the Q4 folder
+cd ../Q4_Garbage_Collection_Python/
+
+# Run the Python script
+python3 main.py
+```
+
+#### Q5: Performance Comparison (Python/Java/C)
+
+```bash
+# Navigate back to the root and enter the Q5 folder
+cd ../Q5_Performance_Comparison/
+
+# Run the Python script
+python3 main.py
+```
+
+#### Bonus: LRU Algorithm (Java)
+
+```bash
+# Navigate back to the root and enter the Bonus folder
+cd ../Q_Bonus_LRU/
+
+# Compile the Java file
+javac LRU.java
+
+# Run the compiled .class file
+java LRU
+```
 
 -----
 
