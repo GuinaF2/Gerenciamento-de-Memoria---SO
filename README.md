@@ -1,2 +1,148 @@
-# Gerenciamento-de-Memoria---SO
-Projeto de Gerenciamento de Memória para a disciplina de Sistemas Operacionais. Inclui implementações em C, Python e Java de: Alocação Estática/Dinâmica , Simulação de Fragmentação (First-Fit) , Algoritmo de Substituição de Página (FIFO e LRU Bônus ), Garbage Collection em Python e Comparação de Performance Stack vs. Heap.
+# Memory Management in Operating Systems
+
+This repository contains the practical implementations and theoretical analyses for the "Memory Management in Operating Systems" project. [cite\_start]This work was developed for the Operating Systems discipline in the Software Engineering program[cite: 1, 2].
+
+  - [cite\_start]**Course:** Software Engineering [cite: 1]
+  - [cite\_start]**Discipline:** Operating Systems [cite: 2]
+  - [cite\_start]**Professor:** José Carlos Domingues Flores [cite: 3]
+
+## 🚀 Project Overview
+
+[cite\_start]This project explores fundamental concepts of memory management in operating systems[cite: 6]. [cite\_start]It combines theoretical explanations with practical code implementations in C, Python, and Java to demonstrate core mechanisms[cite: 6, 7].
+
+### Implemented Concepts
+
+The repository covers the following topics:
+
+1.  **Q1: Static vs. Dynamic Allocation:**
+
+      * [cite\_start]A theoretical comparison of static and dynamic memory[cite: 56, 57].
+      * [cite\_start]A **C** program that demonstrates allocating arrays on both the stack (static) and the heap (dynamic) and comparing their memory addresses[cite: 60, 61, 63].
+
+2.  **Q2: Memory Fragmentation Simulation:**
+
+      * [cite\_start]A theoretical explanation of internal and external fragmentation[cite: 73].
+      * [cite\_start]A **Python** program that simulates a fixed-partition memory manager using the **First-Fit** algorithm, calculating and reporting internal fragmentation[cite: 75, 78, 79].
+
+3.  **Q3: FIFO Page Replacement Algorithm:**
+
+      * [cite\_start]A theoretical overview of the First-In, First-Out (FIFO) algorithm[cite: 96].
+      * [cite\_start]A **Java** program that simulates FIFO, processes a sequence of page references, and calculates the total page faults and hit/fault rate[cite: 98, 101, 106, 107].
+
+4.  **Q4: Python Garbage Collection:**
+
+      * [cite\_start]An explanation of Python's GC mechanism, including reference counting and the generational collector[cite: 120, 121].
+      * [cite\_start]A **Python** program demonstrating automatic destruction, reference cycles, and the use of the `gc` module to force collection[cite: 123, 131, 132, 133].
+
+5.  **Q5: Allocation Performance Comparison:**
+
+      * [cite\_start]A theoretical analysis of stack vs. heap performance[cite: 142, 143].
+      * [cite\_start]A program that measures and compares the time taken to allocate and deallocate millions of variables on the stack versus the heap[cite: 148].
+
+6.  **Bonus: LRU Page Replacement Algorithm:**
+
+      * [cite\_start]An implementation of the **Least Recently Used (LRU)** page replacement algorithm[cite: 161].
+      * [cite\_start]A comparative analysis against the FIFO implementation from Q3, focusing on page fault rates[cite: 166].
+
+-----
+
+## 📁 Repository Structure
+
+The project is organized into folders, one for each question. [cite\_start]The theoretical answers and screenshots are consolidated in the `Report.pdf` document[cite: 33, 34].
+
+```
+.
+├── 📄 README.md
+├── 📄 Report.pdf
+│
+├── 📁 Q1_Static_Dynamic_C/
+│   └── 📄 main.c
+│
+├── 📁 Q2_Fragmentation_Python/
+│   └── 📄 main.py
+│
+├── 📁 Q3_FIFO_Java/
+│   └── 📄 FIFO.java
+│
+├── 📁 Q4_Garbage_Collection_Python/
+│   └── 📄 main.py
+│
+├── 📁 Q5_Performance_Comparison/
+│   └── 📄 main.py   (or .c, .java)
+│
+└── 📁 Q_Bonus_LRU/
+    └── 📄 LRU.java  (or .c, .py)
+```
+
+-----
+
+## ⚙️ How to Compile and Run
+
+[cite\_start]Instructions for executing the practical assignments are provided below[cite: 28].
+
+### 1\. C Programs (Q1, Q5\*)
+
+To compile and run the C programs, navigate to the appropriate directory:
+
+```bash
+# Navigate to the directory
+cd Q1_Static_Dynamic_C/
+
+# Compile the program
+gcc main.c -o main
+
+# Run the executable
+./main
+```
+
+*(Applies to Q5 if C was used)*
+
+### 2\. Python Programs (Q2, Q4, Q5\*)
+
+To run the Python scripts, you need Python 3.x installed.
+
+```bash
+# Navigate to the directory
+cd Q2_Fragmentation_Python/
+
+# Run the script
+python3 main.py
+```
+
+*(Applies to Q4 and Q5 if Python was used)*
+
+### 3\. Java Programs (Q3, Bonus, Q5\*)
+
+To compile and run the Java programs, you need the JDK installed.
+
+```bash
+# Navigate to the directory
+cd Q3_FIFO_Java/
+
+# Compile the .java file
+javac FIFO.java
+
+# Run the compiled .class file
+java FIFO
+```
+
+*(Applies to the Bonus question and Q5 if Java was used)*
+
+-----
+
+## 👥 Authors
+
+This project was developed by:
+
+  * Guilherme Henrique Oliveira da Silva
+  * Livia dos Reis Gomides
+  * Miguel Mendes
+  * Vinicius de Souza Fernandes
+
+-----
+
+## 📜 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+-----
