@@ -34,10 +34,6 @@ The repository covers the following topics:
     * A theoretical analysis of stack vs. heap performance.
     * A program that measures and compares the time taken to allocate and deallocate millions of variables on the stack versus the heap.
 
-6.  **Bonus: LRU Page Replacement Algorithm:**
-    * An implementation of the **Least Recently Used (LRU)** page replacement algorithm.
-    * A comparative analysis against the FIFO implementation from Q3, focusing on page fault rates.
-
 ---
 
 ## 📁 Repository Structure
@@ -51,22 +47,20 @@ The project is organized into folders, one for each question. The theoretical an
 ├── 📄 Report.pdf
 │
 ├── 📁 Q1\_Static\_Dynamic\_C/
-│   └── 📄 main.c
+│   └── 📄 dinamicaXestatica.c
 │
 ├── 📁 Q2\_Fragmentation\_CS/
-│   └── 📄 Program.cs
+│   └── 📄 fragmentacao.cs
 │
 ├── 📁 Q3\_FIFO\_Java/
-│   └── 📄 FIFO.java
+│   └── 📄 programaFIFO.java
 │
 ├── 📁 Q4\_Garbage\_Collection\_Python/
-│   └── 📄 main.py
+│   └── 📄 ColetorLixo.py
 │
 ├── 📁 Q5\_Performance\_Comparison/
-│   └── 📄 main.py   (or .c, .java)
-│
-└── 📁 Q\_Bonus\_LRU/
-└── 📄 LRU.java  (or .c, .py)
+│   └── 📄 comparacao.py   (or .c, .java)
+
 
 ````
 
@@ -82,7 +76,7 @@ Before you begin, ensure you have the following tools installed on your system:
 * **Git** (for cloning the repository)
 * **GCC** (for compiling the C program, Q1)
 * **.NET SDK** (for running the C# project, Q2)
-* **Java JDK** (for compiling and running the Java programs, Q3 & Bonus)
+* **Java JDK** (for compiling and running the Java program, Q3 )
 * **Python 3** (for running the Python scripts, Q4 & Q5)
 
 ### Step 1: Clone the Repository
@@ -155,19 +149,6 @@ cd ../Q5_Performance_Comparison/
 
 # Run the Python script
 python3 main.py
-```
-
-#### Bonus: LRU Algorithm (Java)
-
-```bash
-# Navigate back to the root and enter the Bonus folder
-cd ../Q_Bonus_LRU/
-
-# Compile the Java file
-javac LRU.java
-
-# Run the compiled .class file
-java LRU
 ```
 
 -----
